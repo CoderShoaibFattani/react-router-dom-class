@@ -1,0 +1,27 @@
+.list {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.listItem {
+    list-style-type: none;
+    width: 200px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 20px 0px;
+   
+    color: #000;
+    text-align: center;
+    cursor: pointer;
+}
+
+.listItem1 {
+    color: #000;
+    text-decoration: none;
+}
+
+.active {
+    background-color: black;
+    color: #fff;
+}
