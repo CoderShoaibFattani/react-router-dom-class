@@ -14,7 +14,7 @@ const Home = () => {
     {/* <NavBar /> */}
     <h1>Home Page</h1>
     <p>This is the home page.</p>
-    <button onClick={()=> navigate("/contact", {state:obj}) }>go to contact</button>
+    <button onClick={()=> navigate("/products", {state:obj}) }>go to products page</button>
     {/* <Outlet /> */}
     </> 
   )

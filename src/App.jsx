@@ -4,6 +4,8 @@ import Contact from './components/Contact'
 import About from './components/About'
 import Home from './components/Home'
 import NavBar from './components/NavBar'
+import Products from './components/Products'
+import Product from './components/Product'
 
 // we can use useNavigate to route from one path to another and send data from one route to another route
 // const navigate = useNavigate()
@@ -16,11 +18,13 @@ import NavBar from './components/NavBar'
 const App = () => {
   return (
     <Routes>
-        <Route path='/' element={<NavBar />} >
-          <Route path='home' element={<Home />} />
-          <Route path='about' element={<About />} />
-          <Route path='contact' element={<Contact />} />
-        </Route>
+        {/* <Route path='/' element={<NavBar />} > */}
+          <Route path='/' element={<Home />} />
+          <Route path='products' element={<Products />} />
+          <Route path='product/:id' element={<Product />} />
+
+          {/* <Route path='contact' element={<Contact />} /> */}
+        {/* </Route> */}
     </Routes>
   )
 }
